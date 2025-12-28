@@ -3,11 +3,11 @@ import React from "react";
 import { MdEventNote } from "react-icons/md";
 
 const Introduction = () => {
-  const backgroundColor =
-    "bg-gradient-to-r from-[#E2EAF4] via-[#E7E9F3] to-[#ECE7F2] p-4";
+   const backgroundColor =
+    "bg-gradient-to-r from-[#DBE7F6] via-[#D6DFEF] to-[#E6DCEF] p-4";
   return (
     <div className={`${backgroundColor} min-h-screen flex items-center justify-center `}>
-        <div className="bg-[#F7FAFE] max-w-200 rounded-lg">
+        <div className="bg-[#F7FAFE] max-w-200 rounded-xl">
           <div className="flex items-center p-2 px-6 border-b border-gray-700/10">
             <div className="flex gap-2">
               {/* colors */}

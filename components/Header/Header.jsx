@@ -2,6 +2,7 @@ import React from 'react'
 import { FaBatteryFull, FaHome, FaWifi } from "react-icons/fa";
 
 const Header = () => {
+
   return (
     <div className='bg-[#FBF8FE] flex justify-between items-center px-6 py-1 border-b border-black/3 fixed w-full top-0 backdrop:blur-2xl'>
       <div className='flex items-center gap-4'>
