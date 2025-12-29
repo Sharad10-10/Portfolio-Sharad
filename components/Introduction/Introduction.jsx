@@ -1,5 +1,7 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEventNote } from "react-icons/md";
 
 const Introduction = () => {
@@ -45,6 +47,10 @@ const Introduction = () => {
                 <h3 className="text-[#707786] flex items-center gap-2">
                   <MdEventNote className="text-black" /> 2+ years experience
                 </h3>
+                <div className="flex gap-4 items-center justify-center text-center">
+                  <Link className="flex items-center gap-1" href={'https://github.com/Sharad10-10'}> <span><FaLinkedin /></span> Linkedin</Link>
+                  <Link className="flex items-center gap-1" href={'https://github.com/Sharad10-10'}> <span><FaGithub /></span> Github</Link>
+                </div>
               </div>
 
               <div className="text-center">
