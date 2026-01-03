@@ -48,8 +48,8 @@ const Introduction = () => {
                   <MdEventNote className="text-black" /> 2+ years experience
                 </h3>
                 <div className="flex gap-4 items-center justify-center text-center">
-                  <Link className="flex items-center gap-1" href={'https://github.com/Sharad10-10'}> <span><FaLinkedin /></span> Linkedin</Link>
-                  <Link className="flex items-center gap-1" href={'https://github.com/Sharad10-10'}> <span><FaGithub /></span> Github</Link>
+                  <Link className="flex items-center gap-1 hover:scale-105 transition-all duration-300" href={'https://github.com/Sharad10-10'}> <span><FaLinkedin /></span> Linkedin</Link>
+                  <Link className="flex items-center gap-1 hover:scale-105 transition-all duration-300" href={'https://github.com/Sharad10-10'}> <span><FaGithub /></span> Github</Link>
                 </div>
               </div>
 
@@ -64,10 +64,10 @@ const Introduction = () => {
               </div>
 
               <div className="flex gap-4">
-                <button className="px-4 py-2 text-white bg-[#007BFF] rounded-lg hover:scale-105 transition-all cursor-pointer">
+                <button className="px-4 py-2 text-white bg-[#007BFF] rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer">
                   Get in Touch
                 </button>
-                <button className="px-4 py-2 bg-[#E9EAED] rounded-lg hover:scale-105 transition-all cursor-pointer">
+                <button className="px-4 py-2 bg-[#E9EAED] rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer">
                   View my work
                 </button>
               </div>

@@ -1,3 +1,4 @@
+import ContactMe from '@/components/ContactMe/ContactMe'
 import ExperienceSection from '@/components/ExperienceSection/ExperienceSection'
 import Header from '@/components/Header/Header'
 import Introduction from '@/components/Introduction/Introduction'
@@ -13,6 +14,7 @@ const Home = () => {
       <ProjectSection />
       <ExperienceSection />
       <SkillsSection />
+      <ContactMe />
     </div>
   )
 }
