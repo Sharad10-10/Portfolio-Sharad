@@ -61,7 +61,7 @@ const SkillsSection = () => {
     ]
 
   return (
-    <div className={`${backgroundColor} pt-40`}>
+    <div id='skillsSection' className={`${backgroundColor} pt-40`}>
         <div className='text-center flex flex-col gap-2'>
             <h1 className='text-3xl font-medium'>Skills and Expertise</h1>
             <h2 className='text-md text-[#707786]'>Things That I Have Learned So Far</h2>
@@ -103,9 +103,9 @@ const SkillsSection = () => {
                     <div className='flex gap-3 flex-col px-4 pb-6 flex-wrap'>
                         <div><p className='text-sm text-[#707786] pt-8 px-4'>//~ also familiar with</p></div>
                       <div className='flex gap-3 flex-wrap'>
-                            <span className='text-sm bg-[#EDF1F1] hover:scale-105 transition-all duration-500 rounded-xl px-3 py-1'>Restful Api</span>
+                            <span className='text-sm bg-[#EDF1F1] hover:scale-105 transition-all duration-500 rounded-xl px-3 py-1'>GraphQL API</span>
                             <span className='text-sm bg-[#EDF1F1] hover:scale-105 transition-all duration-500 rounded-xl px-3 py-1'>Figma/Wireframing</span>
-                            <span className='text-sm bg-[#EDF1F1] hover:scale-105 transition-all duration-500 rounded-xl px-3 py-1'>ORMS</span>
+                            <span className='text-sm bg-[#EDF1F1] hover:scale-105 transition-all duration-500 rounded-xl px-3 py-1'>ORM</span>
                             <span className='text-sm bg-[#EDF1F1] hover:scale-105 transition-all duration-500 rounded-xl px-3 py-1'>CI/CD pipeline</span>
                             <span className='text-sm bg-[#EDF1F1] hover:scale-105 transition-all duration-500 rounded-xl px-3 py-1'>Postman</span>
                       </div>
@@ -180,8 +180,8 @@ const SkillsSection = () => {
                     <div className='flex gap-3 flex-col px-4 pb-6 flex-wrap text-[#707786]'>
                         <div><p className='text-sm pt-8 px-4'>//~ Fun facts ✨</p></div>
                       <div className='flex flex-col gap-3 flex-wrap '>
-                            <p>☕ Powered by 4+ cups of coffee daily</p>
-                            <p>🎧 Codes best with lo-fi beats</p>
+                            <p>☕ Powered by 3+ cups of Nepalese Tea daily</p>
+                            <p>🎧 Codes best in peace and music</p>
                             <p>🌱 Always learning something new</p>
                            
                       </div>

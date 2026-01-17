@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -7,8 +8,15 @@ import { MdEventNote } from "react-icons/md";
 const Introduction = () => {
    const backgroundColor =
     "bg-gradient-to-r from-[#DBE7F6] via-[#D6DFEF] to-[#E6DCEF] p-4";
+
+     const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
   return (
-    <div className={`${backgroundColor} min-h-screen flex items-center justify-center `}>
+    <div id="introduction" className={`${backgroundColor} min-h-screen flex items-center justify-center `}>
         <div className="bg-[#F7FAFE] max-w-200 rounded-xl">
           <div className="flex items-center p-2 px-6 border-b border-gray-700/10">
             <div className="flex gap-2">
@@ -48,8 +56,8 @@ const Introduction = () => {
                   <MdEventNote className="text-black" /> 2+ years experience
                 </h3>
                 <div className="flex gap-4 items-center justify-center text-center">
-                  <Link className="flex items-center gap-1 hover:scale-105 transition-all duration-300" href={'https://github.com/Sharad10-10'}> <span><FaLinkedin /></span> Linkedin</Link>
-                  <Link className="flex items-center gap-1 hover:scale-105 transition-all duration-300" href={'https://github.com/Sharad10-10'}> <span><FaGithub /></span> Github</Link>
+                  <Link className="flex items-center gap-1 hover:scale-105 transition-all duration-300" href={process.env.NEXT_PUBLIC_LINKEDIN_LINK} target="_blank"> <span><FaLinkedin /></span> Linkedin</Link>
+                  <Link className="flex items-center gap-1 hover:scale-105 transition-all duration-300" href={process.env.NEXT_PUBLIC_GITHUB_LINK} target="_blank"> <span><FaGithub /></span> Github</Link>
                 </div>
               </div>
 
@@ -64,10 +72,10 @@ const Introduction = () => {
               </div>
 
               <div className="flex gap-4">
-                <button className="px-4 py-2 text-white bg-[#007BFF] rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <button onClick={()=>handleScroll("contactSection")} className="px-4 py-2 text-white bg-[#007BFF] rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer">
                   Get in Touch
                 </button>
-                <button className="px-4 py-2 bg-[#E9EAED] rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer">
+                <button onClick={()=>handleScroll("projectSection")} className="px-4 py-2 bg-[#E9EAED] rounded-lg hover:scale-105 transition-all duration-300 cursor-pointer">
                   View my work
                 </button>
               </div>

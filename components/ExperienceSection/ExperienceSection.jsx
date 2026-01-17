@@ -30,7 +30,7 @@ const ExperienceSection = () => {
 
 
   return (
-    <div className={`${backgroundColor} flex flex-col items-center justify-center flex-wrap pt-40`}>
+    <div id='experienceSection' className={`${backgroundColor} flex flex-col items-center justify-center flex-wrap pt-40`}>
         <div className='text-center flex flex-col gap-2'>
             <h1 className='text-4xl font-medium'>Experience</h1>
             <h2 className='text-medium text-[#707786]'>Where I've worked and what I've learned.</h2>
