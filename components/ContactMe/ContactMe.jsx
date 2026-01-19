@@ -8,9 +8,6 @@ import { toast, ToastContainer } from 'react-toastify';
 
 
 const ContactMe = () => {
-      const backgroundColor =
-    "bg-gradient-to-r from-[#DBE7F6] via-[#D6DFEF] to-[#E6DCEF] p-4";
-
 
     const [formData, setFormData] = useState({
         userName: "",
@@ -58,7 +55,7 @@ const ContactMe = () => {
     }
    
   return (
-    <div id='contactSection' className={`${backgroundColor} pt-40 flex flex-col items-center justify-center`}>
+    <div id='contactSection' className={`pt-40 flex flex-col items-center justify-center`}>
        <div>
           <h1 className='text-3xl font-medium text-center'>Contact Me</h1>
        </div>

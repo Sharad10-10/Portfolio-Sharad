@@ -6,6 +6,11 @@ body{
   padding: 0;
   box-sizing: border-box;
   font-family: 'Outfit', sans-serif;
+  background: linear-gradient(
+    to right,
+    #DBE7F6,
+    #D6DFEF,
+    #E6DCEF)
 }
 
  

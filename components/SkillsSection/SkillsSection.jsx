@@ -2,9 +2,6 @@ import Image from 'next/image';
 import React from 'react'
 
 const SkillsSection = () => {
-     const backgroundColor =
-    "bg-gradient-to-r from-[#DBE7F6] via-[#D6DFEF] to-[#E6DCEF] p-4";
-
     const techSkills = [
         {
             techName: "React/Next js",
@@ -61,7 +58,7 @@ const SkillsSection = () => {
     ]
 
   return (
-    <div id='skillsSection' className={`${backgroundColor} pt-40`}>
+    <div id='skillsSection' className={`pt-40`}>
         <div className='text-center flex flex-col gap-2'>
             <h1 className='text-3xl font-medium'>Skills and Expertise</h1>
             <h2 className='text-md text-[#707786]'>Things That I Have Learned So Far</h2>

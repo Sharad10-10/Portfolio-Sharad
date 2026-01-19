@@ -4,9 +4,6 @@ import React from 'react'
 import { FaGithub, FaShareSquare } from 'react-icons/fa';
 
 const ProjectSection = () => {
-   const backgroundColor =
-    "bg-gradient-to-r from-[#DBE7F6] via-[#D6DFEF] to-[#E6DCEF] p-4";
-
     const myProjects = [
         {
             title: "Ai Room Designer",
@@ -42,10 +39,9 @@ const ProjectSection = () => {
              gitHubLink: "https://github.com/Sharad10-10/Dice-Game"
         }
     ]
-
-
+    
   return (
-    <div id='projectSection' className={`flex flex-col gap-12 items-center justify-center ${backgroundColor} pt-12`}>
+    <div id='projectSection' className={`flex flex-col gap-12 items-center justify-center pt-12`}>
        <div>
              <div className='text-center flex flex-col gap-2'>
                 <h1 className='text-4xl'>Featured Projects</h1>

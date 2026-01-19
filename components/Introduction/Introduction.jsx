@@ -6,9 +6,6 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEventNote } from "react-icons/md";
 
 const Introduction = () => {
-   const backgroundColor =
-    "bg-gradient-to-r from-[#DBE7F6] via-[#D6DFEF] to-[#E6DCEF] p-4";
-
      const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -16,7 +13,7 @@ const Introduction = () => {
     }
   };
   return (
-    <div id="introduction" className={`${backgroundColor} min-h-screen flex items-center justify-center `}>
+    <div id="introduction" className={`min-h-screen flex items-center justify-center `}>
         <div className="bg-[#F7FAFE] max-w-200 rounded-xl">
           <div className="flex items-center p-2 px-6 border-b border-gray-700/10">
             <div className="flex gap-2">
