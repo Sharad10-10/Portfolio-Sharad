@@ -26,7 +26,7 @@ const ContactMe = () => {
         })
     }
 
-    console.log("form data", formData);
+
 
     const handleSubmit = async(e)=> {
         e.preventDefault()

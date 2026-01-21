@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { MdEventNote } from "react-icons/md";
 
@@ -12,6 +12,38 @@ const Introduction = () => {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
     }
   };
+
+  const text = "Hey, I am Sharad Ghimire"
+  const [displayText, setDisplayText] = useState('')
+
+ 
+     useEffect(() => {
+    let i = 0;
+    let timer;
+
+    const type = () => {
+      if (i <= text.length) {
+        setDisplayText(text.slice(0, i));
+        i++;
+        timer = setTimeout(type, 80); 
+      } else {
+        
+        setTimeout(() => {
+          i = 0;
+          setDisplayText("");
+          type();
+        }, 1500); 
+      }
+    };
+
+    type();
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  
+
+
   return (
     <div id="introduction" className={`min-h-screen flex items-center justify-center `}>
         <div className="bg-[#F7FAFE] max-w-200 rounded-xl">
@@ -43,8 +75,8 @@ const Introduction = () => {
 
               <div className="flex flex-col items-center justify-center gap-2">
                 <h1 className="text-3xl font-semibold">
-                  Hey, I'm{" "}
-                  <span className="text-[#764FE7]">Sharad Ghimire</span> 👋
+                 
+                      <span className="text-[#764FE7]">{displayText}</span> 👋
                 </h1>
                 <h2 className="text-xl text-[#707786]">
                   Fullstack Developer & Creative Technologist

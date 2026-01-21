@@ -89,9 +89,8 @@ const ProjectSection = () => {
                     <div className='border border-black/10'></div>
 
                     <div className='flex gap-8 text-lg text-[#53575F] '>
-                       <Link href={projects.gitHubLink}><FaGithub className='cursor-pointer hover:scale-105 transition-all' />Github</Link>
-                       <Link href={projects.projectLink}><FaShareSquare className='cursor-pointer hover:scale-105 transition-all'/>Live Demo</Link>
-
+                       <Link href={projects.gitHubLink} target='_blank'><FaGithub className='cursor-pointer hover:scale-105 transition-all' />Github</Link>
+                       <Link href={projects.projectLink} target='_blank'><FaShareSquare className='cursor-pointer hover:scale-105 transition-all'/>Live Demo</Link>
                     </div>  
                 </div>
             </div>
@@ -102,8 +101,6 @@ const ProjectSection = () => {
 
         )
      })}
-
-
     </div>
     </div>
   )
