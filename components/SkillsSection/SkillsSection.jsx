@@ -58,7 +58,7 @@ const SkillsSection = () => {
     ]
 
   return (
-    <div id='skillsSection' className={`pt-40`}>
+    <div id='skillsSection' className='pt-40 px-2'>
         <div className='text-center flex flex-col gap-2'>
             <h1 className='text-3xl font-medium'>Skills and Expertise</h1>
             <h2 className='text-md text-[#707786]'>Things That I Have Learned So Far</h2>

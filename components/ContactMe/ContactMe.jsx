@@ -55,7 +55,7 @@ const ContactMe = () => {
     }
    
   return (
-    <div id='contactSection' className={`pt-40 flex flex-col items-center justify-center`}>
+    <div id='contactSection' className='pt-40 flex flex-col items-center justify-center px-2'>
        <div>
           <h1 className='text-3xl font-medium text-center'>Contact Me</h1>
        </div>

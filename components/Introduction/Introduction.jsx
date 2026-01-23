@@ -17,35 +17,33 @@ const Introduction = () => {
   const [displayText, setDisplayText] = useState('')
 
  
-     useEffect(() => {
+  useEffect(() => {
     let i = 0;
     let timer;
 
-    const type = () => {
+    const animateText = () => {
       if (i <= text.length) {
         setDisplayText(text.slice(0, i));
         i++;
-        timer = setTimeout(type, 80); 
+        timer = setTimeout(animateText, 80); 
       } else {
         
         setTimeout(() => {
           i = 0;
           setDisplayText("");
-          type();
+          animateText();
         }, 1500); 
       }
-    };
+      };
 
-    type();
+    animateText();
 
     return () => clearTimeout(timer);
   }, []);
 
-  
-
 
   return (
-    <div id="introduction" className={`min-h-screen flex items-center justify-center `}>
+    <div id="introduction" className='min-h-screen flex items-center justify-center px-2'>
         <div className="bg-[#F7FAFE] max-w-200 rounded-xl">
           <div className="flex items-center p-2 px-6 border-b border-gray-700/10">
             <div className="flex gap-2">

@@ -41,7 +41,7 @@ const ProjectSection = () => {
     ]
     
   return (
-    <div id='projectSection' className={`flex flex-col gap-12 items-center justify-center pt-12`}>
+    <div id='projectSection' className='flex flex-col gap-12 items-center justify-center pt-12 px-2'>
        <div>
              <div className='text-center flex flex-col gap-2'>
                 <h1 className='text-4xl'>Featured Projects</h1>

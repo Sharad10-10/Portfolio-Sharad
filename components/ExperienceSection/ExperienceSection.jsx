@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 
 const ExperienceSection = () => {
@@ -27,7 +28,7 @@ const ExperienceSection = () => {
 ];
 
   return (
-    <div id='experienceSection' className={`flex flex-col items-center justify-center flex-wrap pt-40`}>
+    <div id='experienceSection' className='flex flex-col items-center justify-center flex-wrap pt-40 px-2'>
         <div className='text-center flex flex-col gap-2'>
             <h1 className='text-4xl font-medium'>Experience</h1>
             <h2 className='text-medium text-[#707786]'>Where I've worked and what I've learned.</h2>
@@ -82,7 +83,7 @@ const ExperienceSection = () => {
 
                     <div className='border border-black/10'/>
                     <div className='mt-8 mb-4'>
-                        <button className='bg-[#E9EAED] rounded-xl w-full py-3 cursor-pointer hover:scale-105 transition-all duration-300'>📄 Download full resume</button>
+                        <a href={'/Sharad_Ghimire_Resume.pdf'} download target='_blank'><button className='bg-[#E9EAED] rounded-xl w-full py-3 cursor-pointer hover:scale-105 transition-all duration-300'>📄 Download full resume</button></a>
                     </div>
                 </div>
 

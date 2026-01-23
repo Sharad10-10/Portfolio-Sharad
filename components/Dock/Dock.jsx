@@ -45,7 +45,7 @@ const [activeId, setActiveId] = useState('introduction')
  
 
   return (
-    <div className={`hidden sm:flex justify-center items-center gap-8`}>
+    <div className='hidden sm:flex justify-center items-center gap-8'>
        <div className={`flex gap-3 bg-[#F3F8F6] items-center justify-center py-1 px-4 rounded-2xl fixed bottom-3 z-50 shadow-2xl`}>
                  {dockItems.map((dockItem, index)=> {
                 
